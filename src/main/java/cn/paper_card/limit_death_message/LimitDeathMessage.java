@@ -74,7 +74,7 @@ public final class LimitDeathMessage extends JavaPlugin implements Listener {
                 final int dx = Math.abs(loc.getBlockX() - cx);
                 final int dz = Math.abs(loc.getBlockZ() - cz);
                 if (dx < 1024 && dz < 1024) {
-                    player.sendMessage(Component.text()
+                    worldPlayer.sendMessage(Component.text()
                             .append(component)
                             .append(Component.text(" [附近]")
                                     .color(NamedTextColor.GRAY)
